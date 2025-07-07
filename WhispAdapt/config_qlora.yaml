@@ -1,0 +1,57 @@
+hf_token: "hf_XXXXXXXXXXXXXXXXXXXXXXXXX"
+dataset_name: "USERNAME/DATA_NAME"
+model_name: "openai/whisper-large-v2"
+
+output_dir: "DIR_NAME"
+
+# Labels expected by Whisper (fixed to 32+ for shape compatibility).
+# Only the first 4 labels (0,1,2,3) are used in actual training.
+# Remaining labels are placeholders to satisfy model shape.
+labels:
+  - "0"   # Actual
+  - "1"   # Actual
+  - "2"   # Actual
+  - "3"   # Actual
+  - "4"   # DUMMY
+  - "5"   # DUMMY
+  - "6"   # DUMMY
+  - "7"   # DUMMY
+  - "8"   # DUMMY
+  - "9"   # DUMMY
+  - "10"  # DUMMY
+  - "11"  # DUMMY
+  - "12"  # DUMMY
+  - "13"  # DUMMY
+  - "14"  # DUMMY
+  - "15"  # DUMMY
+  - "16"  # DUMMY
+  - "17"  # DUMMY
+  - "18"  # DUMMY
+  - "19"  # DUMMY
+  - "20"  # DUMMY
+  - "21"  # DUMMY
+  - "22"  # DUMMY
+  - "23"  # DUMMY
+  - "24"  # DUMMY
+  - "25"  # DUMMY
+  - "26"  # DUMMY
+  - "27"  # DUMMY
+  - "28"  # DUMMY
+  - "29"  # DUMMY
+  - "30"  # DUMMY
+  - "31"  # DUMMY
+  - "32"  # DUMMY — Whisper requires 33 output classes total
+
+
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+
+batch_size: 8
+gradient_accumulation_steps: 2
+learning_rate: 1e-4
+warmup_ratio: 0.2
+epochs: 30
+save_steps: 1000
+eval_steps: 1000

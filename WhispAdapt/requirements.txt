@@ -1,0 +1,12 @@
+datasets
+transformers
+huggingface_hub
+pyyaml
+peft
+evaluate
+scikit-learn
+matplotlib
+seaborn
+pyyaml
+accelerate
+librosa
