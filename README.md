@@ -16,7 +16,6 @@ This repository contains the codebase for **WhispAdapt**, a framework designed f
 
 This approach minimizes the number of trainable parameters, making it well-suited for low-resource scenarios while preserving Whisper’s powerful representations.
 
-📂 See [`WhispAdapt/`](./WhispAdapt/) for full implementation, training code, and evaluation scripts.
 
 ---
 
@@ -32,7 +31,6 @@ This section contains **two approaches** using powerful speech encoders like **H
 
  All models are evaluated across multiple dialects and languages to establish baseline performance for comparison with WhispAdapt.
 
-📂 See [`Pretrained_Baselines/`](./Pretrained_Baselines/) for training scripts, config files, and results.
 
 ---
 
@@ -50,7 +48,6 @@ Includes classical machine learning pipelines using:
 
 These serve as simple yet effective baselines to compare against modern Transformer-based approaches.
 
-📂 See [`Traditional_Models/`](./Traditional_Models/) for full code and results.
 
 ---
 
