@@ -1,0 +1,20 @@
+{
+  "Tamil": {
+    "Madras_Vazhaku": 0,
+    "Kongu_Tamil": 1,
+    "Madurai_Vazhaku": 2,
+    "Thoothukudi_Tamil": 3
+  },
+  "Malayalam": {
+    "Kottayam": 0,
+    "Kozhikode": 1,
+    "Thrissur": 2,
+    "Trivandrum": 3
+  },
+  "Kannada": {
+    "Dakshina_Kannada": 0,
+    "Udupi": 1,
+    "Mandya": 2,
+    "Dhaarwad": 3
+  }
+}
