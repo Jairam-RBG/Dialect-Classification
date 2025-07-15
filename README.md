@@ -23,8 +23,8 @@ This approach minimizes the number of trainable parameters, making it well-suite
 
 This section contains **two approaches** using powerful speech encoders like **HuBERT**, **WavLM**, and **XLS-R**:
 
-- `lightweight_classifier/`  
-  Uses Hugging Face’s `AutoModelForAudioClassification` for end-to-end classification.
+- `lightweight_classifier/`
+   Similar to the one used in proposed architecture (WhispAdapt)
   
 - `dnn_classifier/`  
   Uses frozen pretrained models as **feature extractors**, followed by a **custom Deep Neural Network (DNN)** classifier.
@@ -57,7 +57,7 @@ All models are evaluated on a curated dialectal speech dataset for:
 
 | Language   | Dialects                             |
 |------------|---------------------------------------|
-| **Tamil**     | Madras Vazhaku (Cheannai), Kongu Tamil (Coimbatore), Madurai Vazhaku, Thoothukudi Tamil |
+| **Tamil**     | Madras Vazhaku (Chennai), Kongu Tamil (Coimbatore), Madurai Vazhaku, Thoothukudi Tamil |
 | **Kannada**   | Dakshina Kannada (Coastal), Dharwad (North), Udupi (Kundapura), Mandya     |
 | **Malayalam** | Kottayam, Kozhikode, Trivandrum, Thrissur  |
 
