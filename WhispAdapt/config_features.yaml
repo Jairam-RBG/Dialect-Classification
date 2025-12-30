@@ -1,0 +1,11 @@
+language: Tamil  # Options: Tamil, Malayalam, Kannada
+
+paths:
+  train: "/path/to/train"
+  test: "/path/to/test"
+  valid: "/path/to/valid"
+
+huggingface:
+  model_id: "openai/whisper-large-v2"
+  repo_id: "username/corpus_name"
+  token: "hf_your_token_here"
